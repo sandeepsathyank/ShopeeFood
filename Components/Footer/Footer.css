@@ -1,0 +1,98 @@
+.Footer{
+    margin-top:3% ;
+    border-top: 1px solid #dfdfdf;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #d1d1d1;
+}
+.left img{
+    width: 250px;
+    height: 120px; 
+}
+
+
+.line{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+}
+
+.line li:hover{
+    color: rgb(255, 123, 0);
+    cursor: pointer;
+}
+
+.center h2{
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    text-align: center;
+    padding-top: 2%;
+
+}
+
+p{
+    text-align: center;
+}
+
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 15px; 
+}
+
+.right img:hover{
+    cursor: pointer;
+    transform: scale(1.10);
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon-row,
+.store-row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.store-row img{
+    width: 100px;
+    height: 30px;
+}
+
+
+@media (max-width: 412px) {
+  .Footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .line {
+    gap: 10px;
+  }
+
+  .left img {
+    width: 80px;
+    height: 40px;
+  }
+  .store-row img{
+    width: 60px;
+    height: 20px;
+}
+.line{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    font-size: 10px;
+}
+
+.line li:hover{
+    color: rgb(255, 123, 0);
+    cursor: pointer;
+}
+
+
+}
