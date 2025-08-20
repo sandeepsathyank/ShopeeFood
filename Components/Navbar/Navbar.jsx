@@ -31,7 +31,7 @@ const Navbar = ({setShowLogin}) => {
       </ul>
       <div className="navbar-icons">
         <span className="navbar-icon"><Link to={"/cart"}><img src={cart} alt="cart" />
-        <span className="cart-count">{GetCount()}</span>
+        {GetCount() > 0 && <span className="cart-count">{GetCount()}</span>}
         </Link></span>
         <span className="navbar-icon"><img src={search} alt="search" /></span>
         <span className="navbar-icon"><img onClick={()=>setShowLogin(true)} src={profile} alt="profile" /></span>
